@@ -11,5 +11,5 @@ const multer = Multer({
     }
 })
 route.post('/upload', multer.single('file'), gcsMiddlewares.sendUploadToGCS, ControllerFile.upload)
-
+route.get('/', ControllerFile.findFile)
 module.exports = route

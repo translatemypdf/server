@@ -1,6 +1,6 @@
 'use strict'
 
-exports.getPublicUrl = (bucketName, fileName) => `htpp://storage.googleapis.com/${bucketName}/${fileName}`
+exports.getPublicUrl = (bucketName, fileName) => `http://storage.googleapis.com/${bucketName}/${fileName}`
 
 
 // exports.copyFileToGCS = (localFilePath, bucketName, options) => {
