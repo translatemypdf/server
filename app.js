@@ -4,8 +4,9 @@ const cors = require ('cors')
 const mongoose = require ('mongoose')
 
 // const indexRouter = require('./routes/index')
+
 const userRouter = require('./routes/users')
-// const fileRouter = require('./routes/articles')
+const fileRouter = require('./routes/files')
 const port = process.env.port || 3000
 
 const app = express()
@@ -16,8 +17,10 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 // app.use('/', indexRouter)
+
 app.use('/users', userRouter)
-// app.use('/articles', articleRouter)
+app.use('/file', fileRouter)
+
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`)
