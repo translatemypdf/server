@@ -1,5 +1,6 @@
 const User = require('../models/user')
 const { compare } = require('../helpers/hashPassword')
+const { sign } = require('../helpers/jwtConvert')
 
 class UserController {
 
