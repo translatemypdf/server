@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/translatemypdf/server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/translatemypdf/server/issues"
+  },
+  "homepage": "https://github.com/translatemypdf/server#readme",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "@google-cloud/translate": "^3.0.1",
+    "@google-cloud/vision": "^0.25.0",
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.5",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "google-translate": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.0",
+    "multer": "^1.4.1"
+  }
+}
